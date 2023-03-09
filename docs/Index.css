@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), transparent), url(images/EqQSwzVUUAAbqof.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0 5%;
+    position: relative;
+}
+    /* --navigation-- */
+    nav{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        padding: 5px 0px;
+        /* justify-content: space-between; */
+    }
+        /* -flex logo- */
+        nav a img{
+            margin-top: 10px;
+            width: 150px;
+            cursor: pointer;
+            filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(230deg) brightness(108%) contrast(103%);
+        }
+        /* -flex ul- */
+        nav ul{
+            flex: 1;
+            text-align: right;
+            padding-right: 0px;
+        }
+        /* -flex bars- */
+        nav .toggle i{
+            color: transparent;
+        }
+            nav ul li{
+                display: inline-block;
+                list-style: none;
+                margin: 10px 30px;
+            }
+                nav ul li a{
+                    color: #fff;
+                    text-decoration: none;
+                    position: relative; /* position important */
+                }
+                /* hover */
+                nav ul li a.hover::after{
+                    content: '';
+                    width: 0; /* transition important */
+                    height: 3px;
+                    position: absolute; /* position important */
+                    bottom: -5px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background: #fff;
+                    transition: width 0.3s; /* transition important */
+                }
+                    nav ul li a.hover:hover::after{
+                        width: 50%; /*transition important */
+                    }
+                
+
+    /* --text area-- */
+    .text-box{
+        color: #fff;
+        position: absolute;
+        bottom: 8%;
+        width: 75%;
+    }
+        /* -infor- */
+        .text-box p{
+            font-size: 50px;
+            font-weight: 600;
+        }
+        .text-box h1{
+            font-size: 120px;
+            line-height: 0.95em;
+            margin-left: -4px;
+            color: transparent;
+            -webkit-text-stroke: 1px #fff;
+            background-image: url(images/back.png); /* important - background-size responsive */
+            -webkit-background-clip: text;
+            background-position: 0 0;
+            animation: back 20s linear infinite;
+        }
+            @keyframes back{
+                100%{
+                    background-position: 2000px 0;
+                }
+            }
+        .text-box h3{
+            font-size: 40px;
+            font-weight: 500;
+        }
+        /* -button- */
+        .text-box .row{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+            .text-box .row a{
+                display: flex;
+                align-items: center;
+                color: #fff;
+                text-decoration: none;
+                padding: 10px 20px;
+                margin-right: 20px;
+                border: 2px solid #fff;
+            }
+            .text-box .row a:hover{
+                color: transparent;
+                -webkit-text-stroke: 1px #fff;
+            }
+                .text-box .row a i{
+                    padding-top: 2px;
+                    font-size: 25px;
+                    line-height: 15px;
+                    margin-left: 5px;
+                }
+        /* -social- */
+        .social-icons{
+            position: absolute;
+            right: 5%;
+            bottom: 8%;
+        }
+            .social-icons a{
+                text-decoration: none;
+                display: block;
+            }
+                .social-icons a i{
+                    width: 25px;
+                    margin: 25px 5px;
+                    color: #fff;
+                }
+                .social-icons a i:hover{
+                    color: transparent;
+                    -webkit-text-stroke: 2px #fff;
+                    font-size: 40px;
+                }
+     
+/* ---responsive--- */
+@media (max-width: 1078px) {
+    h1{
+        background-size: cover;
+    }
+}
+@media (max-width: 1049px) {
+    .text-box span{
+        display: none;
+    }
+}
+@media (max-height: 880px) {
+    .text-box p{
+        font-size: 30px;
+    }
+    .text-box h1{
+        font-size: 90px;
+    }
+    .text-box h3{
+        font-size: 20px;
+    }
+}
+@media (max-width: 750px) {
+    .text-box p{
+        font-size: 2em;
+    }
+    .text-box h1{
+        font-size: 4em;
+    }
+    .text-box h3{
+        font-size: 1em;
+    }
+    nav ul{
+        display: none;
+    }
+    nav img {
+        width: 100px;
+        margin-left: -56px;
+    }
+    nav .toggle{
+        display: flex;
+        position: relative;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        text-align: right;
+        justify-content: center;
+        align-items: center;
+        right: -88%;
+        font-size: 30px;
+        color: #fff;
+        z-index: 10;
+        justify-content: space-evenly;
+    }
+    nav .toggle i{
+        color: #fff;
+    }
+    nav .toggle.active{
+        z-index: 11;     
+    }
+    nav ul.navigation.active{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #000000d1;
+        z-index: 10;
+    }
+    nav ul li a{
+        font-size: 1.5em;
+    }
+    .text-box .row{
+        flex-direction: column;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+    .text-box .row a{
+        margin: 0.5em;
+        text-align: center;
+    }
+}
+@media (min-width: 751px) {
+
+}   

@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../node_modules/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="../node_modules/boxicons/css/animations.css">
+    <link rel="stylesheet" href="../node_modules/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="../node_modules/slick-carousel/slick/slick-theme.css">
+    <link rel="stylesheet" href="../node_modules/simple-line-icons/dist/styles/simple-line-icons.css">
+    <link rel="stylesheet" href="News.css">
+    <!-- <link rel="stylesheet" href="Slick.css"> -->
+</head>
+
+<body>
+    <!-- site-wrapper starts -->
+    <div class="site-wrapper">
+        <!-- Blur Screen -->
+        <div class="main-overlay"></div>
+
+
+        <!-- header starts -->
+        <header class="header-default">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-xl">
+
+                    <!-- left side of header  -->
+                    <a href="index.html" class="navbar-brand">
+                        <img src="images/logo2.png">
+                    </a>
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav mr-auto">
+                            <!-- dropdown active -->
+                            <li class="nav-item dropdown active">
+                                <a href="../Ecommerce Index Page/Ecommerce.html" class="nav-link dropdown-toggle">Trang Chủ</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#" class="dropdown-item">Manga</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">Anime</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">Light Novel</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">Tin Bản Quyền</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-item">Tin Tổng Hợp</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- end dropdown active -->
+
+                            <!-- nav bar -->
+                            <li class="nav-item">
+                                <a href="#Latest" class="nav-link">Tin Mới</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#Trending" class="nav-link">Thịnh Hành</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Giới Thiệu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../Contact Page/Contact.html" class="nav-link">Liên Hệ</a>
+                            </li>
+                            <!-- end nav bar -->
+                        </ul>
+                    </div>
+                    <!-- end left side of header  -->
+
+                    <!-- right side of header  -->
+                    <div class="header-right">
+                        <ul class="social-icons list-unstyled list-inline mb-0">
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/tsukihime.natuki/"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://twitter.com/itada_kimasu"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.linkedin.com/in/kimasu-itada-396215149/"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://github.com/ItadaKimasu"><i class="fab fa-github"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://codepen.io/itadakimasu-the-vuer"><i class="fab fa-codepen"></i></a>
+                            </li>
+                        </ul>
+                        <!-- buttons  -->
+                        <div class="header-buttons">
+                            <button class="search icon-button">
+                                <i class="icon-magnifier"></i>
+                            </button>
+                            <button class="burger-menu icon-button">
+                                <span class="burger-icon"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- end right side of header  -->
+
+                </div>
+            </nav>
+        </header>
+        <!-- header end -->
+
+
+        <!-- section hero starts  -->
+        <section id="hero">
+            <div class="container-xl">
+                <div class="row gy-4">
+
+                    <div class="col-lg-8">
+                        <!-- left hero -->
+                        <div class="post featured-post-lg">
+                            <div class="details clearfix">
+                                <a href="#" class="category-badge">Bảng Xếp Hạng</a>
+                                <h2 class="post-title">
+                                    <a href="#">【TOP 2O】Webmanga tiềm năng tại Nhật tại “Next Manga Award 2021” (Phần 2)
+                                    </a>
+                                </h2>
+                                <ul class="meta list-inline mb-0">
+                                    <li class="list-inline-item">
+                                        <a href="#">Truyen Ban Quyen</a>
+                                    </li>
+                                    <li class="list-inline-item">30 May 2021</li>
+                                </ul>
+                            </div>
+                            
+                            <a href="#">
+                                <div class="thumb rounded">
+                                    <div class="inner data-bg-image" data-bg-image="images/Hero/Heroimg.jpg">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- end left hero -->
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="post-tabs rounded bordered">
+                            <!-- Swap Tabs -->
+                            <ul class="nav nav-tabs nav-pills nav-fill" id="postTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button aria-controls="popular" aria-selected="true" class="nav-link active"
+                                        data-bs-target="#popular" data-bs-toggle="tab" id="popular-tab" role="tab"
+                                        type="button">
+                                        Nổi Bật
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button aria-controls="recent" aria-selected="false" class="nav-link"
+                                        data-bs-target="#recent" data-bs-toggle="tab" id="recent-tab" role="tab"
+                                        type="button">
+                                        Gần Đây
+                                    </button>
+                                </li>
+                            </ul>
+                            <!-- end Swap Tabs -->
+
+                            <!-- content Swap Tabs -->
+                            <div class="tab-content" id="postsTabContent">
+                                <!-- loader -->
+                                <div class="lds-dual-ring"></div>
+
+                                <!-- popular post  -->
+                                <div class="tab-pane fade show active" id="popular" aria-labelledby="popular-tab"
+                                    role="tabpanel">
+                                    <!-- post1  -->
+                                    <div class="post post-list-sm circle">
+                                        <div class="thumb circle">
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="images/Hero/tabs-1.gif" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="details clearfix">
+                                            <h6 class="post-title my-0">
+                                                <a href="#">【TIN BẢN QUYỀN】[Koori no Kuni no Amaryllis] – Câu chuyện về một cộng đồng người máy</a>
+                                            </h6>
+                                            <ul class="meta list-inline mt-1 mb-0">
+                                                <li class="list-inline-item">24 May 2021</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- post2  -->
+                                    <div class="post post-list-sm circle">
+                                        <div class="thumb circle">
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="images/Hero/tabs-2.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="details clearfix">
+                                            <h6 class="post-title my-0">
+                                                <a href="#">Nhà xuất bản TRẺ dời lịch tái bản【INUYASHA】phiên bản Wideban</a>
+                                            </h6>
+                                            <ul class="meta list-inline mt-1 mb-0">
+                                                <li class="list-inline-item">26 May 2021</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- post3  -->
+                                    <div class="post post-list-sm circle">
+                                        <div class="thumb circle">
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="images/Hero/tabs-2.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="details clearfix">
+                                            <h6 class="post-title my-0">
+                                                <a href="#">【FACT】”Ngựa điên” KAMACHI Kazuma cùng 100 quyển light novel từng được xuất bản</a>
+                                            </h6>
+                                            <ul class="meta list-inline mt-1 mb-0">
+                                                <li class="list-inline-item">28 May 2021</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- post4  -->
+                                    <div class="post post-list-sm circle">
+                                        <div class="thumb circle">
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="images/Hero/tabs-3.png" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="details clearfix">
+                                            <h6 class="post-title my-0">
+                                                <a href="#">【TOP MANGA BÁN CHẠY】Tuần Thứ IV / 7: Từ ngày 27/7 đến 2/8/2020</a>
+                                            </h6>
+                                            <ul class="meta list-inline mt-1 mb-0">
+                                                <li class="list-inline-item">01 Jun 2021</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- recent post  -->
+                                <div class="tab-pane fade" id="recent" aria-labelledby="recent-tab" role="tabpanel">
+                                    <!-- post1  -->
+                                    <div class="post post-list-sm circle">
+                                        <div class="thumb circle">
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="images/Hero/tabs-3.png" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="details clearfix">
+                                            <h6 class="post-title my-0">
+                                                <a href="#">【TOP MANGA BÁN CHẠY】Tuần Thứ III / 9: Từ ngày 20/09 đến 26/09/2021</a>
+                                            </h6>
+                                            <ul class="meta list-inline mt-1 mb-0">
+                                                <li class="list-inline-item">24 May 2021</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- post2  -->
+                                    <div class="post post-list-sm circle">
+                                        <div class="thumb circle">
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="images/Hero/tabs-3.png" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="details clearfix">
+                                            <h6 class="post-title my-0">
+                                                <a href="#">【TOP MANGA BÁN CHẠY】Tuần Thứ II / 9: Từ ngày 13/09 đến 19/09/2021</a>
+                                            </h6>
+                                            <ul class="meta list-inline mt-1 mb-0">
+                                                <li class="list-inline-item">26 May 2021</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- post3  -->
+                                    <div class="post post-list-sm circle">
+                                        <div class="thumb circle">
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="images/Hero/tabs-4.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="details clearfix">
+                                            <h6 class="post-title my-0">
+                                                <a href="#">4 Lý Do Để Xem Anime [Yashahime: Công Chúa Bán Yêu] – Thế hệ sau vừa lạ vừa quen!</a>
+                                            </h6>
+                                            <ul class="meta list-inline mt-1 mb-0">
+                                                <li class="list-inline-item">28 Jun 2021</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- post4  -->
+                                    <div class="post post-list-sm circle">
+                                        <div class="thumb circle">
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="images/Hero/tabs-2.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="details clearfix">
+                                            <h6 class="post-title my-0">
+                                                <a href="#">8 Manga sinh tồn có bản quyền sẽ khiến bạn nghẹt thở khi đối diện ranh giới sống – chết</a>
+                                            </h6>
+                                            <ul class="meta list-inline mt-1 mb-0">
+                                                <li class="list-inline-item">04 Jun 2021</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end content Swap Tabs -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- section hero end  -->
+
+
+        <!-- main content  -->
+        <section class="main-content" style="min-height: 3461px;">
+            <div class="container-xl">
+                <div class="row gy-4">
+
+                    <!-- left part 1st section  -->
+                    <div class="col-lg-8">
+                        <div class="section-header">
+                            <h3 class="section-title">Có Thể Bạn Thích</h3>
+                        </div>
+                        <!-- Editor's Choice -->
+                        <div class="padding-30 rounded bordered">
+                            <div class="row gy-5">
+
+                                <div class="col-sm-6">
+                                    <!-- post  -->
+                                    <div class="post">
+                                        <div class="thumb rounded">
+                                            <a href="#" class="category-badge position-absolute">Hội Bàn Tròn</a>
+                                            <span class="post-format">
+                                                <i class="icon-book-open"></i>
+                                            </span>
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="images/Main/post1.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <ul class="meta list-inline mt-4 mb-0">
+                                            <li class="list-inline-item">
+                                                <a href="#">
+                                                    <img class="author" src="images/Avatar/avatar.jpg" alt="">
+                                                    Mọt Mọt
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">05 Jun 2021</li>
+                                        </ul>
+                                        <h5 class="post-title mb-3 mt-3">
+                                            <a href="#">Những chú mèo trong tiểu thuyết từng được xuất bản ở Việt Nam</a>
+                                        </h5>
+                                        <p class="excerpt mb-0">
+                                            Loài mèo, giống loài bốn chân lắm lông, đáng yêu mà cũng hết mực “chanh hỏi” ấy đã đánh chiếm từ trong nhà, đến ngoài ngõ, tới cả thế giới nghệ thuật điện ảnh, manga của quốc đ...
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+
+                                    <!-- 1 -->
+                                    <div class="post post-list-sm square">
+                                        <div class="thumb rounded">
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="images/Main/post2.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="details clearfix">
+                                            <h6 class="post-title my-0">
+                                                <a href="#">
+                                                    HOME TOUR – Nhà của TAKAHASHI Rumiko có gì?
+                                                </a>
+                                            </h6>
+                                            <ul class="meta list-inline mt-1 mb-0">
+                                                <li class="list-inline-item">25 May 2021</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- 2 -->
+                                    <div class="post post-list-sm square">
+                                        <div class="thumb rounded">
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="images/Main/post3.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="details clearfix">
+                                            <h6 class="post-title my-0">
+                                                <a href="#">
+                                                    Bí kíp giữ sách – Cách xử lý sách truyện bị cong do ẩm
+                                                </a>
+                                            </h6>
+                                            <ul class="meta list-inline mt-1 mb-0">
+                                                <li class="list-inline-item">25 May 2021</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- 3 -->
+                                    <div class="post post-list-sm square">
+                                        <div class="thumb rounded">
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="images/Main/post4.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="details clearfix">
+                                            <h6 class="post-title my-0">
+                                                <a href="#">
+                                                    Nhắc đến Tháng 4 chúng ta có [Lời Nói Dối Tháng Tư], vậy những tháng khác gì sao?
+                                                </a>
+                                            </h6>
+                                            <ul class="meta list-inline mt-1 mb-0">
+                                                <li class="list-inline-item">28 May 2021</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- 4 -->
+                                    <div class="post post-list-sm square">
+                                        <div class="thumb rounded">
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="images/Main/post5.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="details clearfix">
+                                            <h6 class="post-title my-0">
+                                                <a href="#">
+                                                    [Cross Game] cùng những phiên bản chưa xuất hiện ở Việt Nam
+                                                </a>
+                                            </h6>
+                                            <div id="Trending"></div>
+                                            <ul class="meta list-inline mt-1 mb-0">
+                                                <li class="list-inline-item">28 May 2021</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!-- end Editor's Choice -->
+                        <div class="spacer" data-height="50"></div>
+
+                        <div class="section-header">
+                            <h3 class="section-title">Thịnh Hành</h3>
+                        </div>
+                        <!-- Trending -->
+                        <div class="padding-30 rounded bordered">
+                            <div class="row gy-5">
+                                <div class="col-sm-6">
+                                    
+                                    <!-- 1 -->
+                                    <div class="post">
+                                        <div class="thumb rounded">
+                                            <a href="#" class="category-badge position-absolute">Anime-Live Action</a>
+                                            <span class="post-format">
+                                                <i class="icon-feed"></i>
+                                            </span>
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="images/Trending/trending1.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <ul class="meta list-inline mt-4 mb-0">
+                                            <li class="list-inline-item">
+                                                <a href="#">
+                                                    <img src="images/Hero/tabs-2.jpg" class="author" alt="">
+                                                    Truyen Ban Quyen
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">24 May 2021</li>
+                                        </ul>
+                                        <h5 class="post-title mb-3 mt-3">
+                                            <a href="#">ARAKAWA Hiromu đang sáng tác chương mới cho【GIẢ KIM THUẬT SƯ】</a>
+                                        </h5>
+                                        <p class="excerpt mb-0">
+                                            Trang Twitter @hagarenmovie đã đăng thông tin chính thức về việc tác giả ARAKAWA Hiromu đang sáng tác chương mới cho【GIẢ...
+                                        </p>
+                                    </div>
+                                    <!-- 2 -->
+                                    <div class="post post-list-sm square before-seperator">
+                                        <div class="thumb rounded">
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="images/Trending/trending2.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="details clearfix">
+                                            <h6 class="post-title my-0">
+                                                <a href="#">【ĐỀ XUẤT TÁI BẢN】[Ám Hành Ngự Sử] | Shin Angyo Onshi</a>
+                                            </h6>
+                                            <ul class="meta list-inline mt-1 mb-0">
+                                                <li class="list-inline-item">25 May 2021</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- 3 -->
+                                    <div class="post post-list-sm square before-seperator">
+                                        <div class="thumb rounded">
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="images/Trending/trending3.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="details clearfix">
+                                            <h6 class="post-title my-0">
+                                                <a href="#">【TOP LIGHT NOVEL BÁN CHẠY】Tuần Thứ II / 11: Từ ngày 11/11 đến 17/11</a>
+                                            </h6>
+                                            <ul class="meta list-inline mt-1 mb-0">
+                                                <li class="list-inline-item">25 May 2021</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6">
+                                    <!-- 4 -->
+                                    <div class="post">
+                                        <div class="thumb rounded">
+                                            <a href="#" class="category-badge position-absolute">Bảng Xếp Hạng</a>
+                                            <span class="post-format">
+                                                <i class="icon-graph"></i>
+                                            </span>
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="images/Trending/trending4.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <ul class="meta list-inline mt-4 mb-0">
+                                            <li class="list-inline-item">
+                                                <a href="#">
+                                                    <img src="images/Hero/tabs-3.png" class="author" alt="">
+                                                    PhucHong - KEPY
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">29 May 2021</li>
+                                        </ul>
+                                        <h5 class="post-title mb-3 mt-3">
+                                            <a href="#">【TOP MANGA BÁN CHẠY】Tuần Thứ I / 11: Từ ngày 2/11 đến 8/11/2020</a>
+                                        </h5>
+                                        <p class="excerpt mb-0">
+                                            Fly High!! [Haikyu!!] kết thúc viên mãn với doanh số cực khủng!! Những tựa đình đám nhất nhà JUMP chiếm sân hoàn toàn BXH đầu thán...
+                                        </p>
+                                    </div>
+                                    <!-- 5 -->
+                                    <div class="post post-list-sm square before-seperator">
+                                        <div class="thumb rounded">
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="images/Trending/trending5.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="details clearfix">
+                                            <h6 class="post-title my-0">
+                                                <a href="#">Bộ truyện tuổi thơ [Asari Cô Bé Tinh Nghịch] sẽ sớm trở lại trong năm nay!</a>
+                                            </h6>
+                                            <ul class="meta list-inline mt-1 mb-0">
+                                                <li class="list-inline-item">25 May 2021</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- 6 -->
+                                    <div class="post post-list-sm square before-seperator">
+                                        <div class="thumb rounded">
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="images/Trending/trending6.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="details clearfix">
+                                            <h6 class="post-title my-0">
+                                                <a href="#">【LƯỚT TRUYỆN】Chàng thám tử loạn trí nhà [Gia Sư Hitman Reborn!]</a>
+                                            </h6>
+                                            <ul class="meta list-inline mt-1 mb-0">
+                                                <li class="list-inline-item">25 May 2021</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- end Trending -->
+                        <div class="spacer" data-height="50"></div>
+                        <!-- Inspiration -->
+<!-- Button -->         <div class="section-header">
+                            <h3 class="section-title">Cảm Hứng</h3>
+                            <div class="slick-arrows-top">
+                                <buttton class="carousel-topNav-prev slick-custom-buttons" type="button"
+                                    data-role="none" aria-label="Previous">
+                                    <i class="icon-arrow-left"></i>
+                                </buttton>
+                                <buttton class="carousel-topNav-next slick-custom-buttons" type="button"
+                                    data-role="none" aria-label="Next">
+                                    <i class="icon-arrow-right"></i>
+                                </buttton>
+                            </div>
+                        </div>
+
+<!-- Content -->        <div class="row post-carousel-twoCol post-carousel">
+                            <!-- 1 -->
+                            <div class="post post-over-content col-md-6">
+                                <div class="details clearfix">
+                                    <a href="#" class="category-badge">Anime-LiveAction</a>
+                                    <h4 class="post-title">
+                                        <a href="#">((Tập 1)) [Trận Chiến Bắt Đầu Sau 5 Giây] – Nam chính thông minh với năng lực bí ẩn</a>
+                                    </h4>
+                                    <ul class="meta list-inline mb-0">
+                                        <li class="list-inline-item">
+                                            <a href="#">Svcat</a>
+                                        </li>
+                                        <li class="list-inline-item">03 Jun 2021</li>
+                                    </ul>
+                                </div>
+                                <a href="#">
+                                    <div class="thumb rounded">
+                                        <div class="inner">
+                                            <img src="images/Inspiration/Inspiration1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- 2 -->
+                            <div class="post post-over-content col-md-6">
+                                <div class="details clearfix">
+                                    <a href="#" class="category-badge">Manga</a>
+                                    <h4 class="post-title">
+                                        <a href="#">Yếu tố hài hước có thành con dao hai lưỡi với [Đạo Làm Chồng Đảm]?</a>
+                                    </h4>
+                                    <ul class="meta list-inline mb-0">
+                                        <li class="list-inline-item">
+                                            <a href="#">Nam Kha Tử</a>
+                                        </li>
+                                        <li class="list-inline-item">02 Jun 2021</li>
+                                    </ul>
+                                </div>
+                                <a href="#">
+                                    <div class="thumb rounded">
+                                        <div class="inner">
+                                            <img src="images/Inspiration/Inspiration2.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- 3 -->
+                            <div class="post post-over-content col-md-6">
+                                <div class="details clearfix">
+                                    <a href="#" class="category-badge">Ngẫm</a>
+                                    <h4 class="post-title">
+                                        <a href="#">Cánh phượng đỏ giờ không còn thơ! [Mùa Hè Bất Tận] – một tác phẩm học đường mang đầ...</a>
+                                        <div id="Latest"></div>
+                                    </h4>
+                                    <ul class="meta list-inline mb-0">
+                                        <li class="list-inline-item">
+                                            <a href="#">Nam Kha Tử</a>
+                                        </li>
+                                        <li class="list-inline-item">01 Jun 2021</li>
+                                    </ul>
+                                </div>
+                                <a href="#">
+                                    <div class="thumb rounded">
+                                        <div class="inner">
+                                            <img src="images/Inspiration/Inspiration3.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- end Inspiration -->
+
+                        <div class="spacer" data-height="50"></div>
+
+                        <!-- Latest -->
+                        <div class="section-header">
+                            <h3 class="section-title">Tin Mới</h3>
+                        </div>
+
+                        <div class="padding-30 rounded bordered">
+                            <div class="row">
+
+                                <!-- 1 -->
+<!-- Content -->                <div class="col-md-12 col-sm-6">
+                                    <!-- post  -->
+                                    <div class="post post-list clearfix">
+                                        <div class="thumb rounded">
+                                            <span class="post-format-sm">
+                                                <i class="icon-feed"></i>
+                                            </span>
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="images/Latest/Latest1.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="details">
+                                            <ul class="meta list-inline mb-3">
+                                                <li class="list-inline-item">
+                                                    <a href="#">
+                                                        <img src="images/Avatar/Latest1-avt.jpg" class="author" alt="">
+                                                        Fuyuu
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="#">Anime-LiveAction</a>
+                                                </li>
+                                                <li class="list-inline-item">26 May 2021</li>
+                                            </ul>
+                                            <h5 class="post-tile">
+                                                <a href="#">
+                                                    ((Tập 1)) [Sonny Boy] – Sự trở lại mạnh mẽ của Nhà Điên với một thế giới “chất”...
+                                                </a>
+                                            </h5>
+                                            <p class="excerpt mb-0">
+                                                Đã tròn 1 năm kể từ khi [No Guns Life] kết thúc, Studio Madhouse vẫn chưa sản xuất thêm bộ anime nào mới...
+                                            </p>
+                                            <div class="post-bottom clearfix d-flex align-items-center">
+                                                <div class="social-share me-auto">
+                                                    <button class="toggle-button icon-share"></button>
+                                                    <ul class="icons list-unstyled list-inline mb-0">
+                                                        <li class="list-inline-item">
+                                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="#"><i class="far fa-envelope"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="more-button float-end">
+                                                    <a href="#"><span class="icon-options"></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 2 -->
+                                <div class="col-md-12 col-sm-6">
+                                    <!-- post  -->
+                                    <div class="post post-list clearfix">
+                                        <div class="thumb rounded">
+                                            <span class="post-format-sm">
+                                                <i class="icon-feed"></i>
+                                            </span>
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="images/Latest/Latest2.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="details">
+                                            <ul class="meta list-inline mb-3">
+                                                <li class="list-inline-item">
+                                                    <a href="#">
+                                                        <img src="images/Hero/tabs-4.jpg" class="author" alt="">
+                                                        Svcat
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="#">Anime-LiveAction</a>
+                                                </li>
+                                                <li class="list-inline-item">26 May 2021</li>
+                                            </ul>
+                                            <h5 class="post-tile">
+                                                <a href="#">
+                                                    4 Lý Do Để Xem Anime [Yashahime: Công Chúa Bán Yêu] – Thế hệ sau vừa lạ vừa...
+                                                </a>
+                                            </h5>
+                                            <p class="excerpt mb-0">
+                                                Đã hơn một thập kỷ kể từ khi chương cuối cùng của anime huyền thoại [Inuyasha] kết thúc, giờ đây chúng...
+                                            </p>
+                                            <div class="post-bottom clearfix d-flex align-items-center">
+                                                <div class="social-share me-auto">
+                                                    <button class="toggle-button icon-share"></button>
+                                                    <ul class="icons list-unstyled list-inline mb-0">
+                                                        <li class="list-inline-item">
+                                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="#"><i class="far fa-envelope"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="more-button float-end">
+                                                    <a href="#"><span class="icon-options"></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 3 -->
+                                <div class="col-md-12 col-sm-6">
+                                    <!-- post  -->
+                                    <div class="post post-list clearfix">
+                                        <div class="thumb rounded">
+                                            <span class="post-format-sm">
+                                                <i class="icon-notebook"></i>
+                                            </span>
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="images/Latest/Latest3.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="details">
+                                            <ul class="meta list-inline mb-3">
+                                                <li class="list-inline-item">
+                                                    <a href="#">
+                                                        <img src="images/Avatar/Latest3-avt.jpg" class="author" alt="">
+                                                        Luvetienanh100
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="#">Manga</a>
+                                                </li>
+                                                <li class="list-inline-item">26 May 2021</li>
+                                            </ul>
+                                            <h5 class="post-tile">
+                                                <a href="#">
+                                                    [Xưởng Phép Thuật] – Cú “hit” mở màn của IPM sau giãn cách
+                                                </a>
+                                            </h5>
+                                            <p class="excerpt mb-0">
+                                                Cơn sốt săn “limited” trở lại sau [Miền Đất Hứa]. Vậy [Xưởng Phép Thuật] có gì đặc biệt để trở thành cú “hit...
+                                            </p>
+                                            <div class="post-bottom clearfix d-flex align-items-center">
+                                                <div class="social-share me-auto">
+                                                    <button class="toggle-button icon-share"></button>
+                                                    <ul class="icons list-unstyled list-inline mb-0">
+                                                        <li class="list-inline-item">
+                                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="#"><i class="far fa-envelope"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="more-button float-end">
+                                                    <a href="#"><span class="icon-options"></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 4 -->
+                                <div class="col-md-12 col-sm-6">
+                                    <!-- post  -->
+                                    <div class="post post-list clearfix">
+                                        <div class="thumb rounded">
+                                            <span class="post-format-sm">
+                                                <i class="icon-feed"></i>
+                                            </span>
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="images/Latest/Latest4.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="details">
+                                            <ul class="meta list-inline mb-3">
+                                                <li class="list-inline-item">
+                                                    <a href="#">
+                                                        <img src="images/Avatar/Latest1-avt.jpg" class="author" alt="">
+                                                        Fuyuu
+                                                    </a>
+                                                </li>
+                                                <li class="list-inline-item">
+                                                    <a href="#">Anime-LiveAction</a>
+                                                </li>
+                                                <li class="list-inline-item">26 May 2021</li>
+                                            </ul>
+                                            <h5 class="post-tile">
+                                                <a href="#">
+                                                    4 Lý do để xem Anime [Mob Psycho 100] – Maybe you can be what you want to be
+                                                </a>
+                                            </h5>
+                                            <p class="excerpt mb-0">
+                                                Đôi khi, tôi ước tôi có thể xóa sạch ký ức của chính mình để sống và trải nghiệm một thứ gì đó thêm lần n...
+                                            </p>
+                                            <div class="post-bottom clearfix d-flex align-items-center">
+                                                <div class="social-share me-auto">
+                                                    <button class="toggle-button icon-share"></button>
+                                                    <ul class="icons list-unstyled list-inline mb-0">
+                                                        <li class="list-inline-item">
+                                                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="#"><i class="fab fa-twitter"></i></a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="#"><i class="fab fa-telegram-plane"></i></a>
+                                                        </li>
+                                                        <li class="list-inline-item">
+                                                            <a href="#"><i class="far fa-envelope"></i></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="more-button float-end">
+                                                    <a href="#"><span class="icon-options"></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+<!-- Button -->                 <div class="text-center">
+                                    <button class="btn btn-simple">Xem Thêm</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- end Latest -->
+
+                        <!-- left part over here  -->
+                    </div>
+                    <!-- end left part -->
+
+                    <!-- right part starts from here  -->
+                    <div class="col-lg-4">
+                        <div class="sidebar">
+                            <!-- Short About -->
+                            <div class="widget rounded">
+                                <div class="widget-about text-center">
+                                    <img src="images/logo2.png" alt="" class="logo">
+                                    <p class="mb-4" style="text-align: justify;">This is Lorem ipsum dolor sit amet
+                                        consectetur adipisicing elit.
+                                        Dolores tempora accusantium culpa deleniti nesciunt repellat quisquam quos vero.
+                                        Esse itaque est optio nostrum porro quisquam nihil reprehenderit fugiat enim
+                                        non.</p>
+                                    <ul class="social-icons list-unstyled list-inline mb-0">
+                                        <li class="list-inline-item">
+                                            <a href="https://www.facebook.com/tsukihime.natuki/"><i class="fab fa-facebook-f"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="https://twitter.com/itada_kimasu"><i class="fab fa-twitter"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="https://www.linkedin.com/in/kimasu-itada-396215149/"><i class="fab fa-linkedin-in"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="https://github.com/ItadaKimasu"><i class="fab fa-github"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="https://codepen.io/itadakimasu-the-vuer"><i class="fab fa-codepen"></i></a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a href="#"><i class="far fa-envelope"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- end Short About -->
+
+                            <!-- right part 2 main -->
+                            <div class="widget rounded">
+                                <div class="widget-header text-center">
+                                    <h3 class="widget-title">Tin Bản Quyền</h3>
+                                </div>
+                                <div class="widget-content">
+                                    <!-- 1 -->
+                                    <div class="post post-list-sm circle">
+                                        <div class="thumb circle">
+                                            <span class="number">1</span>
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="images/Hero/tabs-4.jpg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="details clearfix">
+                                            <h6 class="post-title my-0">
+                                                <a href="#">Vừa thông báo kết thúc ở Tập 7, [Migi to Dari] đã được nhà Kim “nhá” bản quyền</a>
+                                            </h6>
+                                            <ul class="meta list-inline mt-1 mb-0">
+                                                <li class="list-inline-item">30 May 2021</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- 2 -->
+                                    <div class="post post-list-sm circle">
+                                        <div class="thumb circle">
+                                            <span class="number">2</span>
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="images/Hero/tabs-3.png" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="details clearfix">
+                                            <h6 class="post-title my-0">
+                                                <a href="#">【TIN BẢN QUYỀN】[Ningyo Series] – Câu chuyện Nhân Ngư</a>
+                                            </h6>
+                                            <ul class="meta list-inline mt-1 mb-0">
+                                                <li class="list-inline-item">30 May 2021</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- 3 -->
+                                    <div class="post post-list-sm circle">
+                                        <div class="thumb circle">
+                                            <span class="number">3</span>
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="images/Hero/tabs-3.png" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="details clearfix">
+                                            <h6 class="post-title my-0">
+                                                <a href="#">【TIN BẢN QUYỀN】[50cm Một Cuộc Đời] đọc là nước mắt cứ tự tuôn ra. . .</a>
+                                            </h6>
+                                            <ul class="meta list-inline mt-1 mb-0">
+                                                <li class="list-inline-item">30 May 2021</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- 4 -->
+                                    <div class="post post-list-sm circle">
+                                        <div class="thumb circle">
+                                            <span class="number">4</span>
+                                            <a href="#">
+                                                <div class="inner">
+                                                    <img src="images/Hero/tabs-3.png" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="details clearfix">
+                                            <h6 class="post-title my-0">
+                                                <a href="#">【TIN BẢN QUYỀN】[Lôi Thần Và Nhân Viên Văn Phòng]</a>
+                                            </h6>
+                                            <ul class="meta list-inline mt-1 mb-0">
+                                                <li class="list-inline-item">30 May 2021</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end right part 2 main -->
+
+                            <!-- Topics Section Right -->
+                            <div class="widget rounded">
+                                <div class="widget-header text-center">
+                                    <h3 class="widget-title">Chủ Đề</h3>
+                                </div>
+                                <div class="widget-content">
+                                    <ul class="list">
+                                        <li><a href="#">Hội Bàn Tròn</a><span>(7)</span></li>
+                                        <li><a href="#">Anime-Live Action</a><span>(5)</span></li>
+                                        <li><a href="#">Anime</a><span>(1)</span></li>
+                                        <li><a href="#">Bảng Xếp Hạng</a><span>(9)</span></li>
+                                        <li><a href="#">Tin Bản Quyền</a><span>(2)</span></li>
+                                        <li><a href="#">Ngẫm</a><span>(4)</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- end Topics Section Right -->
+
+                            <!-- Subcribe Section Right -->
+                            <div class="widget rounded">
+                                <div class="widget-header text-center">
+                                    <h3 class="widget-title">Hòm Thư</h3>
+                                </div>
+                                <div class="widget-content">
+                                    <span class="newsletter-headline text-center mb-3">Hướng tới 50.000 Subcribes</span>
+                                    <form action="#">
+                                        <div class="mb-2">
+                                            <input type="email" class="form-control w-100 text-center"
+                                                placeholder="Nhập Email...">
+                                        </div>
+                                        <button class="btn btn-default btn-full">Đăng Ký</button>
+
+                                    </form>
+                                    <span class="newsletter-privacy text-center mt-3">
+                                        Bằng việc đắng ký, bạn đẫ chấp nhận <a href="#">Chính sách bảo mật</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- end Subcribe Section Right -->
+
+                            <!-- Covid Section Right -->
+                            <div class="widget rounded">
+                                <div class="widget-header text-center">
+                                    <h3 class="widget-title">COVID-19</h3>
+                                </div>
+                                <div class="widget-content">
+
+                                    <div class="post-carousel-widget">
+                                        <!-- 1 -->
+<!-- content -->                        <div class="post post-carousel">
+                                            <div class="thumb rounded">
+                                                <a href="#" class="category-badge position-absolute">COVID-19</a>
+                                                <a href="#">
+                                                    <div class="inner">
+                                                        <img src="images/posts/wid-1.jpg" alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <h5 class="post-title mb-0 mt-4">
+                                                <a href="#">10 Điều cần làm để phòng chống Corona</a>
+                                            </h5>
+                                            <ul class="meta list-inline mt-2 mb-0">
+                                                <li class="list-inline-item">
+                                                    <a href="#">Admin</a>
+                                                </li>
+                                                <li class="list-inline-item">29 March 2021</li>
+                                            </ul>
+                                        </div>
+                                        <!-- 2 -->
+                                        <div class="post post-carousel">
+                                            <div class="thumb rounded">
+                                                <a href="#" class="category-badge position-absolute">COVID-19</a>
+                                                <a href="#">
+                                                    <div class="inner">
+                                                        <img src="images/posts/wid-2.jpg" alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <h5 class="post-title mb-0 mt-4">
+                                                <a href="#">Hãy luôn rửa tay thường xuyên để phòng chống dịch bệnh</a>
+                                            </h5>
+                                            <ul class="meta list-inline mt-2 mb-0">
+                                                <li class="list-inline-item">
+                                                    <a href="#">Admin</a>
+                                                </li>
+                                                <li class="list-inline-item">29 March 2021</li>
+                                            </ul>
+                                        </div>
+                                        <!-- 3 -->
+                                        <div class="post post-carousel">
+                                            <div class="thumb rounded">
+                                                <a href="#" class="category-badge position-absolute">COVID-19</a>
+                                                <a href="#">
+                                                    <div class="inner">
+                                                        <img src="images/posts/wid-3.jpg" alt="">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <h5 class="post-title mb-0 mt-4">
+                                                <a href="#">Tiêm Vaccine là đẩy lui đại dịch, Vì chính bạn và vì mọi ngườI</a>
+                                            </h5>
+                                            <ul class="meta list-inline mt-2 mb-0">
+                                                <li class="list-inline-item">
+                                                    <a href="#">Admin</a>
+                                                </li>
+                                                <li class="list-inline-item">29 March 2021</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+<!-- button -->                         <div class="slick-arrows-bot">
+                                        <buttton class="carousel-botNav-prev slick-custom-buttons" type="button"
+                                            data-role="none" aria-label="Previous">
+                                            <i class="icon-arrow-left"></i>
+                                        </buttton>
+                                        <buttton class="carousel-botNav-next slick-custom-buttons" type="button"
+                                            data-role="none" aria-label="Next">
+                                            <i class="icon-arrow-right"></i>
+                                        </buttton>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- end Covid Section Right -->
+
+                            <!-- Tags Section Right -->
+                            <div class="widget rounded">
+                                <div class="widget-header text-center">
+                                    <h3 class="widget-title">Tag Clouds</h3>
+                                </div>
+                                <div class="widget-content">
+                                    <a href="#" class="tag">#Thịnh Hành</a>
+                                    <a href="#" class="tag">#Anime</a>
+                                    <a href="#" class="tag">#Light Novel</a>
+                                    <a href="#" class="tag">#Manga</a>
+                                    <a href="#" class="tag">#Anime-Live Action</a>
+                                    <a href="#" class="tag">#Tin Bản Quyền</a>
+                                </div>
+                            </div>
+                            <!-- end Tags Section Right -->
+                        </div>
+                    </div>
+                    <!-- end right part -->
+
+                </div>
+            </div>
+        </section>
+        <!-- end main content  -->
+
+
+        <!-- footer starts -->
+        <footer>
+            <div class="row-footer">
+    <!-- 1 -->  <div class="col-footer">
+                    <img src="images/logo2.png" alt="" class="logo">
+                    <p>LightNovel4U nhận đặt hàng trực tuyến và giao hàng tận nơi. KHÔNG hỗ trợ đặt mua và nhận hàng trực tiếp tại văn phòng cũng như tất cả Hệ Thống Fahasa trên toàn quốc. </p>
+                </div>
+    
+    <!-- 2 -->  <div class="col-footer">
+                    <h3>Văn phòng 
+                        <div class="underline office"><span></span></div>
+                    </h3>
+                    <p>Lầu 5, 387-389 Hai Bà Trưng Quận 3 TP HCM</p>
+                    <p>Công Ty Cổ Phần Phát Hành Sách TP HCM</p>
+                    <p>60 - 62 Lê Lợi, Quận 1, TP. HCM, Việt Nam</p>
+                    <p class="email-id"><span>vuquangnam2001@gmail.com</span></p>
+                    <h4>+84 - 583348431</h4>
+                </div>
+    
+    <!-- 3 -->  <div class="col-footer">
+                    <h3>Dịch vụ
+                        <div class="underline services"><span></span></div>
+                    </h3>
+                    <ul>
+                        <li><a href="../Index Page/Index.html">Trang chủ</a></li>
+                        <li><a href="">Yêu cầu hỗ trợ</a></li>
+                        <li><a href="">Điều khoản sử dụng</a></li>
+                        <li><a href="">Chính sách bảo mật</a></li>
+                        <li><a href="">Phương thức vận chuyển</a></li>
+                        <li><a href="">Giới thiệu</a></li>
+                    </ul>
+                </div>
+    
+    <!-- 4 -->  <div class="col-footer">
+                    <h3>Đăng ký nhận bản tin
+                        <div class="underline news"><span></span></div>
+                    </h3>
+                    <form action="">
+                        <i class='bx bx-envelope'></i><input type="email" placeholder="Nhập địa chỉ email của bạn" required>
+                        <button type="submit"><i class='bx bx-right-arrow-alt'></i></button>
+                    </form>
+    
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/tsukihime.natuki/"><i class='bx bxl-facebook' ></i></a>
+                        <a href="https://twitter.com/itada_kimasu"><i class='bx bxl-twitter' ></i></a>
+                        <a href="https://www.linkedin.com/in/kimasu-itada-396215149/"><i class='bx bxl-linkedin' ></i></a>
+                        <a href="https://github.com/ItadaKimasu"><i class='bx bxl-github' ></i></a>
+                        <a href="https://codepen.io/itadakimasu-the-vuer"><i class='bx bxl-codepen'></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr><p class="copyright">LightNovel4U © 2021 Designed by Itada Kimasu | All Rights Reserved</p>
+        </footer>
+        <!-- footer end -->
+    </div>
+    <!-- end site-wrapper starts -->
+
+
+    <!-- canvas menu  -->
+    <div class="canvas-menu d-flex align-items-end flex-column">
+        <button class="btn-close" aria-label="Close" type="button"></button>
+
+        <div class="logo">
+            <img src="images/logo2.png" alt="">
+        </div>
+        <nav>
+            <ul class="vertical-menu">
+                <li class="active">
+                    <a href="index.html">Trang Chủ</a>
+                    <ul class="submenu">
+                        <li><a href="#">Manga</a></li>
+                        <li><a href="#">Anime</a></li>
+                        <li><a href="#">Light Novel</a></li>
+                        <li><a href="#">Tin Bản Quyền</a></li>
+                        <li><a href="#">Tin Tổng Hợp</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Tin Mới</a></li>
+                <li><a href="#">Thịnh Hành</a></li>
+                <li><a href="#">Giới Thiệu</a></li>
+                <li><a href="#">Liên Hệ</a></li>
+            </ul>
+        </nav>
+
+
+        <ul class="social-icons list-unstyled list-inline mb-0 mt-auto w-100">
+            <li class="list-inline-item">
+                <a href="https://www.facebook.com/tsukihime.natuki/"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://twitter.com/itada_kimasu"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/kimasu-itada-396215149/"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://github.com/ItadaKimasu"><i class="fab fa-github"></i></a>
+            </li>
+            <li class="list-inline-item">
+                <a href="https://codepen.io/itadakimasu-the-vuer"><i class="fab fa-codepen"></i></a>
+            </li>
+        </ul>
+    </div>
+    <!-- end canvas menu  -->
+
+
+    <!-- search pop up  -->
+    <div class="search-popup">
+        <button class="btn-close" aria-label="Close" type="button"></button>
+
+        <div class="search-content">
+            <div class="text-center">
+                <h3 class="mb-4 mt-0">Nhấn ESC để đóng</h3>
+            </div>
+
+            <form action="" class="d-flex search-form">
+                <input type="search" placeholder="Tìm kiếm gì đó..." aria-label="Search"
+                    class="form-control me-2">
+                <button class="btn btn-default btn-lg" type="submit">
+                    <i class="icon-magnifier"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+    <!-- end search pop up  -->
+
+
+    <!-- javascripts  -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/sticky-sidebar/dist/jquery.sticky-sidebar.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../node_modules/slick-carousel/slick/slick.min.js"></script>
+    <!-- <script src="slick.min.js"></script> -->
+    <script src="../node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="News.js"></script>
+</body>
+
+</html>

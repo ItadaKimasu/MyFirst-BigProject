@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "@popperjs/core": "^2.10.2",
+    "@types/jquery": "^3.5.6",
+    "bootstrap": "^5.1.1",
+    "boxicons": "^2.0.9",
+    "jquery": "^3.6.0",
+    "simple-line-icons": "^2.5.5",
+    "slick-carousel": "^1.8.1",
+    "sticky-sidebar": "^3.3.1",
+    "swiper": "^7.0.6"
+  }
+}
