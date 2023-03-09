@@ -435,7 +435,7 @@ p{
 }
 @font-face {
     font-family: fontAwesome;
-    src: url(../node_modules/@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf);
+    src: url(../assets/webfonts/fa-regular-400.ttf);
 } 
     .themeswitch::before{
         content: '\f186';
